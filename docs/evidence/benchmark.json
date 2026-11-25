@@ -1,0 +1,311 @@
+{
+  "format": "offcut-atlas/benchmark/1",
+  "environment": {
+    "python": "3.12.9",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "seed": 614,
+  "node_limit_per_case": 60000,
+  "case_count": 17,
+  "status_counts": {
+    "optimal": 13,
+    "feasible": 3,
+    "infeasible": 1
+  },
+  "objective_order": [
+    "fresh_bars",
+    "loss_mm",
+    "bars_used"
+  ],
+  "comparison": {
+    "paired": 16,
+    "improved": 15,
+    "tied": 1,
+    "worse": 0
+  },
+  "median_solve_ms": 0.574,
+  "max_solve_ms": 239.624,
+  "cases": [
+    {
+      "case": "packing-counterexample",
+      "status": "optimal",
+      "nodes": 1,
+      "first_fit": [
+        3,
+        218,
+        3
+      ],
+      "solver": [
+        2,
+        18,
+        2
+      ],
+      "first_fit_ms": 0.019,
+      "solve_ms": 0.229
+    },
+    {
+      "case": "mixed-01",
+      "status": "optimal",
+      "nodes": 36,
+      "first_fit": [
+        3,
+        900,
+        7
+      ],
+      "solver": [
+        3,
+        36,
+        3
+      ],
+      "first_fit_ms": 0.0282,
+      "solve_ms": 0.668
+    },
+    {
+      "case": "mixed-02",
+      "status": "optimal",
+      "nodes": 46,
+      "first_fit": [
+        2,
+        405,
+        6
+      ],
+      "solver": [
+        2,
+        79,
+        5
+      ],
+      "first_fit_ms": 0.0224,
+      "solve_ms": 0.574
+    },
+    {
+      "case": "mixed-03",
+      "status": "optimal",
+      "nodes": 81,
+      "first_fit": [
+        2,
+        142,
+        6
+      ],
+      "solver": [
+        2,
+        33,
+        5
+      ],
+      "first_fit_ms": 0.0206,
+      "solve_ms": 0.64
+    },
+    {
+      "case": "mixed-04",
+      "status": "optimal",
+      "nodes": 98,
+      "first_fit": [
+        2,
+        487,
+        6
+      ],
+      "solver": [
+        2,
+        423,
+        6
+      ],
+      "first_fit_ms": 0.0227,
+      "solve_ms": 0.818
+    },
+    {
+      "case": "mixed-05",
+      "status": "optimal",
+      "nodes": 23,
+      "first_fit": [
+        2,
+        448,
+        5
+      ],
+      "solver": [
+        2,
+        315,
+        4
+      ],
+      "first_fit_ms": 0.0207,
+      "solve_ms": 0.405
+    },
+    {
+      "case": "mixed-06",
+      "status": "optimal",
+      "nodes": 30,
+      "first_fit": [
+        2,
+        396,
+        6
+      ],
+      "solver": [
+        2,
+        36,
+        4
+      ],
+      "first_fit_ms": 0.0212,
+      "solve_ms": 0.544
+    },
+    {
+      "case": "mixed-07",
+      "status": "optimal",
+      "nodes": 2,
+      "first_fit": [
+        2,
+        302,
+        6
+      ],
+      "solver": [
+        2,
+        36,
+        4
+      ],
+      "first_fit_ms": 0.0211,
+      "solve_ms": 0.38
+    },
+    {
+      "case": "mixed-08",
+      "status": "optimal",
+      "nodes": 78,
+      "first_fit": [
+        3,
+        387,
+        7
+      ],
+      "solver": [
+        3,
+        179,
+        5
+      ],
+      "first_fit_ms": 0.0248,
+      "solve_ms": 0.825
+    },
+    {
+      "case": "mixed-09",
+      "status": "optimal",
+      "nodes": 43,
+      "first_fit": [
+        2,
+        401,
+        6
+      ],
+      "solver": [
+        2,
+        401,
+        6
+      ],
+      "first_fit_ms": 0.0217,
+      "solve_ms": 0.524
+    },
+    {
+      "case": "mixed-10",
+      "status": "optimal",
+      "nodes": 13,
+      "first_fit": [
+        2,
+        411,
+        5
+      ],
+      "solver": [
+        2,
+        124,
+        3
+      ],
+      "first_fit_ms": 0.0205,
+      "solve_ms": 0.395
+    },
+    {
+      "case": "mixed-11",
+      "status": "optimal",
+      "nodes": 29,
+      "first_fit": [
+        2,
+        509,
+        6
+      ],
+      "solver": [
+        2,
+        36,
+        3
+      ],
+      "first_fit_ms": 0.0208,
+      "solve_ms": 0.478
+    },
+    {
+      "case": "mixed-12",
+      "status": "optimal",
+      "nodes": 97,
+      "first_fit": [
+        3,
+        328,
+        7
+      ],
+      "solver": [
+        3,
+        39,
+        4
+      ],
+      "first_fit_ms": 0.0217,
+      "solve_ms": 0.792
+    },
+    {
+      "case": "dense-01",
+      "status": "feasible",
+      "nodes": 60000,
+      "first_fit": [
+        3,
+        524,
+        8
+      ],
+      "solver": [
+        2,
+        443,
+        7
+      ],
+      "first_fit_ms": 0.0352,
+      "solve_ms": 239.624
+    },
+    {
+      "case": "dense-02",
+      "status": "feasible",
+      "nodes": 60000,
+      "first_fit": [
+        3,
+        648,
+        8
+      ],
+      "solver": [
+        3,
+        173,
+        8
+      ],
+      "first_fit_ms": 0.0358,
+      "solve_ms": 225.552
+    },
+    {
+      "case": "dense-03",
+      "status": "feasible",
+      "nodes": 60000,
+      "first_fit": [
+        2,
+        475,
+        7
+      ],
+      "solver": [
+        1,
+        104,
+        6
+      ],
+      "first_fit_ms": 0.0353,
+      "solve_ms": 229.061
+    },
+    {
+      "case": "unfillable-profile",
+      "status": "infeasible",
+      "nodes": 0,
+      "first_fit": null,
+      "solver": null,
+      "first_fit_ms": 0.0061,
+      "solve_ms": 0.026
+    }
+  ]
+}

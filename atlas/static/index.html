@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#233e34">
+  <title>Offcut Atlas · Cutting desk</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <a class="brand" href="#desk" aria-label="Offcut Atlas cutting desk"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Offcut Atlas</span></a>
+      <div class="sideblock">
+        <p class="section-label">Workspace</p>
+        <nav>
+          <a href="#desk" data-page="desk"><i class="nav-icon layout" aria-hidden="true"></i>Cutting desk</a>
+          <a href="#stock" data-page="stock"><i class="nav-icon stock" aria-hidden="true"></i>Stock ledger</a>
+          <a href="#history" data-page="history"><i class="nav-icon history" aria-hidden="true"></i>Plan history</a>
+          <a href="#journal" data-page="journal"><i class="nav-icon journal" aria-hidden="true"></i>Activity log</a>
+        </nav>
+      </div>
+      <div class="sidefoot"><span class="tiny-mark" aria-hidden="true">OA</span><div><strong>Framing studio</strong><small>Local workspace</small></div></div>
+    </aside>
+    <div class="page">
+      <header class="topbar"><span>Workspace <b aria-hidden="true">/</b> <strong id="crumb">Cutting desk</strong></span><span id="connection" class="connection">Connecting</span></header>
+      <main id="main" tabindex="-1">
+        <div id="notice" role="alert" hidden></div>
+        <div id="screen" aria-busy="true"><h1>Opening the cutting desk…</h1></div>
+      </main>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title">
+    <div class="dialog-heading"><h2 id="modal-title"></h2><button type="button" class="close" aria-label="Close dialog" data-action="close">×</button></div>
+    <div id="modal-body"></div>
+  </dialog>
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+</body>
+</html>

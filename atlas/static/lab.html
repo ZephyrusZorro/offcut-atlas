@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#243d32"><title>Two-order replay · Offcut Atlas</title>
+<link rel="stylesheet" href="/static/lab.css"><script type="module" src="/static/lab.js"></script>
+</head><body><header><a href="/" class="brand"><i aria-hidden="true">◩</i> Offcut Atlas</a><a href="/">← Cutting desk</a></header>
+<main><p class="eyebrow">Material planning / experiment</p>
+<h1>Two-order replay</h1><p class="intro">Which offcuts will earn their space on the rack? Replay a commission and its follow-up under two retention policies.</p>
+<nav class="experiment-nav" aria-label="Experiments"><a href="#retention">Retention policies</a><a href="#lookahead">Two-order lookahead ↓</a></nav>
+<div class="sheet" id="retention"><section class="inputs"><h2>Experiment setup</h2><p id="source" class="source" aria-live="polite">Loading inventory snapshot…</p>
+<form id="experiment"><fieldset disabled><legend>Follow-up order</legend>
+<label>Material<select id="material"></select></label>
+<div class="pair"><label>Length (mm)<input id="length" type="number" value="620" min="1" max="100000" required></label><label>Pieces<input id="quantity" type="number" min="1" max="96" value="3" required></label></div>
+<div class="fieldhead">Minimum length to retain</div><div class="pair"><label>Policy A (mm)<input id="a" type="number" min="1" max="10000" value="300" required></label><label>Policy B (mm)<input id="b" type="number" min="1" max="10000" value="850" required></label></div>
+<button type="submit">Compare policies <span aria-hidden="true">→</span></button></fieldset></form>
+<p class="note">Each policy replans the first order, returns eligible tails, then plans the follow-up. Both start with the same saved inventory.</p></section>
+<section class="results" aria-labelledby="results-title"><div class="results-head"><p class="eyebrow">Simulation results</p><h2 id="results-title">Across both orders</h2></div><div id="output" aria-live="polite">Loading the experiment…</div></section></div>
+<section id="lookahead" class="lookahead" aria-labelledby="look-title">
+  <div class="look-head"><div><h2 id="look-title">Two-order lookahead</h2>
+    <p>Planning both orders together can preserve a rail the second order needs. Compare their combined allocation with planning each order in turn.</p></div>
+    <div class="look-actions"><button type="button" id="joint-snapshot" disabled>Evaluate current setup</button>
+    <button type="button" id="joint-example">Run worked example</button></div></div>
+  <div id="joint-output" aria-live="polite"><p class="look-hint">Use Policy A and the follow-up above, or open the small worked example to trace both allocations rail by rail.</p></div>
+</section>
+<footer>All lengths in millimetres. Simulations leave the studio ledger untouched.</footer></main></body></html>

@@ -1,0 +1,5 @@
+**
+!atlas/
+!atlas/**
+atlas/**/__pycache__/
+atlas/**/*.pyc

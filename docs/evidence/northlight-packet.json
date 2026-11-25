@@ -1,0 +1,224 @@
+{
+  "format": "offcut-atlas/1",
+  "run_id": "run-571b501ae9c0493ba02b338c79db40e3",
+  "stocks": [
+    {
+      "id": "ASH-001",
+      "kind": "stock",
+      "length_mm": 3000,
+      "material": "Black ash",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "ASH-002",
+      "kind": "stock",
+      "length_mm": 3000,
+      "material": "Black ash",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "ASH-R01",
+      "kind": "remnant",
+      "length_mm": 1160,
+      "material": "Black ash",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "ASH-R02",
+      "kind": "remnant",
+      "length_mm": 860,
+      "material": "Black ash",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "OAK-001",
+      "kind": "stock",
+      "length_mm": 3100,
+      "material": "Natural oak",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "OAK-002",
+      "kind": "stock",
+      "length_mm": 3100,
+      "material": "Natural oak",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "OAK-003",
+      "kind": "stock",
+      "length_mm": 3100,
+      "material": "Natural oak",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "OAK-R01",
+      "kind": "remnant",
+      "length_mm": 1520,
+      "material": "Natural oak",
+      "parent_id": null,
+      "source_run": null
+    },
+    {
+      "id": "OAK-R02",
+      "kind": "remnant",
+      "length_mm": 1190,
+      "material": "Natural oak",
+      "parent_id": null,
+      "source_run": null
+    }
+  ],
+  "request": {
+    "kerf_mm": 3,
+    "name": "Northlight exhibition",
+    "parts": [
+      {
+        "id": "A1",
+        "label": "Panorama · long",
+        "length_mm": 940,
+        "material": "Natural oak",
+        "qty": 4
+      },
+      {
+        "id": "A2",
+        "label": "Panorama · short",
+        "length_mm": 560,
+        "material": "Natural oak",
+        "qty": 4
+      },
+      {
+        "id": "B1",
+        "label": "Study · long",
+        "length_mm": 720,
+        "material": "Black ash",
+        "qty": 2
+      },
+      {
+        "id": "B2",
+        "label": "Study · short",
+        "length_mm": 420,
+        "material": "Black ash",
+        "qty": 2
+      }
+    ],
+    "reuse_mm": 300
+  },
+  "result": {
+    "bars": [
+      {
+        "cuts": [
+          {
+            "length_mm": 720,
+            "part_id": "B1"
+          },
+          {
+            "length_mm": 720,
+            "part_id": "B1"
+          },
+          {
+            "length_mm": 420,
+            "part_id": "B2"
+          },
+          {
+            "length_mm": 420,
+            "part_id": "B2"
+          }
+        ],
+        "stock_id": "ASH-001",
+        "tail_mm": 708
+      },
+      {
+        "cuts": [
+          {
+            "length_mm": 560,
+            "part_id": "A2"
+          },
+          {
+            "length_mm": 560,
+            "part_id": "A2"
+          }
+        ],
+        "stock_id": "OAK-R01",
+        "tail_mm": 394
+      },
+      {
+        "cuts": [
+          {
+            "length_mm": 940,
+            "part_id": "A1"
+          },
+          {
+            "length_mm": 940,
+            "part_id": "A1"
+          },
+          {
+            "length_mm": 560,
+            "part_id": "A2"
+          }
+        ],
+        "stock_id": "OAK-001",
+        "tail_mm": 651
+      },
+      {
+        "cuts": [
+          {
+            "length_mm": 940,
+            "part_id": "A1"
+          },
+          {
+            "length_mm": 940,
+            "part_id": "A1"
+          },
+          {
+            "length_mm": 560,
+            "part_id": "A2"
+          }
+        ],
+        "stock_id": "OAK-002",
+        "tail_mm": 651
+      }
+    ],
+    "baseline": {
+      "bars_used": 7,
+      "fresh_bars": 3,
+      "kerf_mm": 36,
+      "loss_mm": 536,
+      "parts_mm": 8280,
+      "reusable_mm": 5114,
+      "stock_mm": 13930
+    },
+    "message": "Best possible under the selected stock and rules.",
+    "metrics": {
+      "bars_used": 4,
+      "fresh_bars": 3,
+      "kerf_mm": 36,
+      "loss_mm": 36,
+      "parts_mm": 8280,
+      "reusable_mm": 2404,
+      "stock_mm": 10720
+    },
+    "nodes": 35,
+    "status": "optimal"
+  },
+  "verification": {
+    "checks": [
+      "Input schema and unique identifiers",
+      "Stock assigned at most once",
+      "Material and cut length match",
+      "Exact demand quantities",
+      "Per-bar kerf and length conservation",
+      "All seven material and objective totals reconstructed"
+    ],
+    "digest": "6e1737738c92e16364b1dd444bf578b9d47713c009168b40943cd18159d5de43",
+    "errors": [],
+    "valid": true
+  },
+  "receipt": null
+}
